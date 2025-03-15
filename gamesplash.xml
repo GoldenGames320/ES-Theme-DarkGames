@@ -1,8 +1,14 @@
+<!--
+creator:	@Goldengames320
+theme name:     ES-Theme-DarkGames
+update:         March 2025
+-->
+
 <?xml version="1.0" encoding="UTF-8"?>
-
 <theme>
-	<formatVersion>7</formatVersion>
+<formatVersion>7</formatVersion>
 
+<!---------------------------splash--------------------------------------->
 
 <view name="splash">
 
@@ -10,14 +16,14 @@
 <backgroundColor>ffffff</backgroundColor>
 </splash>
 
-    <image name="background">
-      <pos>0.5 0.5</pos>
-      <origin>0.5 0.5</origin>
-      <maxSize>0.85 0.85</maxSize>
-      <roundCorners>0</roundCorners>
-      <linearSmooth>false</linearSmooth>
-      <color>ffffff</color>
-    </image>
+<image name="background">
+<pos>0.5 0.5</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.85 0.85</maxSize>
+<roundCorners>0</roundCorners>
+<linearSmooth>false</linearSmooth>
+<color>ffffff</color>
+</image>
 
 <image name="gamesplash1" extra="true" ifSubset="texture:yes">
 <path>./_inc/art/gamesplash.jpg</path>

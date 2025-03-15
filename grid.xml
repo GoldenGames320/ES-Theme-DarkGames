@@ -1,66 +1,71 @@
+<!--
+creator:	@Goldengames320
+theme name:     ES-Theme-DarkGames
+update:         March 2025
+-->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
 
-   <!---------------------------grid------------------------------------- -->
+<!---------------------------grid------------------------------------- -->
 
-   <view name="grid">
+<view name="grid">
       	  
-	  	  	<image name="cliente" extra="true">
-		<pos>0.91 0.01</pos>
-		<maxSize>0.08 0.08</maxSize>
-		<color>ffffff</color>
-		<path>./_inc/assets/cliente.png</path>
-		<zIndex>999</zIndex>
-	  </image>
+<image name="cliente" extra="true">
+<pos>0.91 0.01</pos>
+<maxSize>0.08 0.08</maxSize>
+<color>ffffff</color>
+<path>./_inc/assets/cliente.png</path>
+<zIndex>999</zIndex>
+</image>
 	  
-     <helpsystem name="help">
-	 <iconColor>FFFFFF</iconColor>
-     <fontSize>0.02</fontSize>
-     <origin>0.5 0.5</origin>
-     <pos>0.5 0.985</pos>
-       <fontPath>./_inc/fonts/Digital-Serial-Bold-folder.ttf</fontPath>
-     </helpsystem>
+<helpsystem name="help">
+<iconColor>FFFFFF</iconColor>
+<fontSize>0.02</fontSize>
+<origin>0.5 0.5</origin>
+<pos>0.5 0.985</pos>
+<fontPath>./_inc/fonts/Digital-Serial-Bold-folder.ttf</fontPath>
+</helpsystem>
 	 
-	 	        <image name="borde" extra="true">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>        
-         <path>./_inc/art/borde.png</path>
-         <zIndex>99999</zIndex>          
-      </image> 
-   
+<image name="borde" extra="true">
+<origin>0 0</origin>
+<pos>0 0</pos>
+<size>1 1</size>        
+<path>./_inc/art/borde.png</path>
+<zIndex>99999</zIndex>          
+</image> 
 
-     <video name="md_video">
-		<color>ffffff</color>
-		<size>0.6 0.8</size>
-		<origin>0.5 0.5</origin>
-		<pos>0.65 0.485</pos>
-		<delay>0.5</delay>
-	    <loops>3</loops>
-		<effect>none</effect>		 
-        <showSnapshotNoVideo>true</showSnapshotNoVideo>
-        <showSnapshotDelay>true</showSnapshotDelay>
-		<zIndex>2</zIndex>
-     </video>
+<video name="md_video">
+<color>ffffff</color>
+<size>0.6 0.8</size>
+<origin>0.5 0.5</origin>
+<pos>0.65 0.485</pos>
+<delay>0.5</delay>
+<loops>3</loops>
+<effect>none</effect>		 
+<showSnapshotNoVideo>true</showSnapshotNoVideo>
+<showSnapshotDelay>true</showSnapshotDelay>
+<zIndex>2</zIndex>
+</video>
 
-	<imagegrid name="gamegrid">
-	  <pos>-0.073 0.05</pos>
-      <size>0.30 0.89</size>
-      <padding>0.08 0 0.08 0</padding>
-      <scrollDirection>vertical</scrollDirection>
-      <autoLayout>1 7</autoLayout>
-      <autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>
-      <margin>0 0.015</margin>
-      <centerSelection>true</centerSelection>
-      <scrollLoop>true</scrollLoop>
-	  <imageSource>marquee</imageSource>
-	  <folderImage>./_inc/art/folder.png</folderImage>
-      <gameImage>./default/game.png</gameImage>
-	  <zIndex>300</zIndex>  
-    </imagegrid>
+<imagegrid name="gamegrid">
+<pos>-0.073 0.05</pos>
+<size>0.30 0.89</size>
+<padding>0.08 0 0.08 0</padding>
+<scrollDirection>vertical</scrollDirection>
+<autoLayout>1 7</autoLayout>
+<autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>
+<margin>0 0.015</margin>
+<centerSelection>true</centerSelection>
+<scrollLoop>true</scrollLoop>
+<imageSource>marquee</imageSource>
+<folderImage>./_inc/art/folder.png</folderImage>
+<gameImage>./default/game.png</gameImage>
+<zIndex>300</zIndex>  
+</imagegrid>
 
- <image name="gridtile.favorite">
+<image name="gridtile.favorite">
 <path>./art/gridfav.png</path>
 <pos>0.75 0</pos>
 <maxSize>0.25 0.25</maxSize>
@@ -98,27 +103,26 @@
 <glowSize>0</glowSize>
 </text>
 	
-	<image name="shadowcover01" extra="true">
-		<path>./_inc/art/grid.png</path>
-		<size>1 1</size>
-		<pos>0 0</pos>
-		<origin>0 0</origin>
-		<zIndex>10</zIndex>
-	</image>
+<image name="shadowcover01" extra="true">
+<path>./_inc/art/grid.png</path>
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<zIndex>10</zIndex>
+</image>
 
-	
-		<text name="logoText">
-		<pos>0.691 0.444</pos>
-	    <fontSize>0.11</fontSize>
-		<fontPath>./_inc/fonts/1.ttf</fontPath>
-	    <size>0.57 0.1</size>
-		<alignment>center</alignment>
-        <color>FFFFFFB3</color>
-        <forceUppercase>1</forceUppercase>
-	    <rotation>-90</rotation>   
-	    <zIndex>999</zIndex>
-    </text>	
+<text name="logoText">
+<pos>0.691 0.444</pos>
+<fontSize>0.11</fontSize>
+<fontPath>./_inc/fonts/1.ttf</fontPath>
+<size>0.57 0.1</size>
+<alignment>center</alignment>
+<color>FFFFFFB3</color>
+<forceUppercase>1</forceUppercase>
+<rotation>-90</rotation>  
+<zIndex>999</zIndex>
+</text>	
 
 </view>
    
-   </theme>
+</theme>

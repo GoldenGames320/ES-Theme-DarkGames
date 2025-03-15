@@ -1,93 +1,230 @@
+<!--
+creator:	@Goldengames320
+theme name:     ES-Theme-DarkGames
+update:         March 2025
+-->
+
 <?xml version="1.0" encoding="UTF-8"?>
-<theme>
+<theme defaultView="theme">
 <formatVersion>7</formatVersion>
 
-   <!---------------------------gamecarousel------------------------------------- -->
+<!---------------------------gamecarousel------------------------------------- -->
 
 <view name="gamecarousel">
+
 <gamecarousel name="gamecarousel">
-<zIndex>43</zIndex>	      
+<zIndex>400</zIndex>	      
 <type>vertical_wheel</type>
 <pos>-0.39 0</pos>
 <size>1 1</size>
-<logoScale>1.2</logoScale>
 <logoSize>0.150 0.260</logoSize>
 <color>00000000</color>
-<maxLogoCount>30</maxLogoCount>
-<logoRotation>8</logoRotation>
+<maxLogoCount>6</maxLogoCount>
+<logoRotation>12</logoRotation>
 <logoRotationOrigin>-2.0 0.2</logoRotationOrigin>
-<logoAlignment>center</logoAlignment>   
+<logoAlignment>center</logoAlignment>        
 <imageSource>marquee</imageSource>
 </gamecarousel> 
 
-	  	  	<image name="cliente" extra="true">
-		<pos>0.91 0.01</pos>
-		<maxSize>0.08 0.08</maxSize>
-		<color>ffffff</color>
-		<path>./_inc/assets/cliente.png</path>
-		<zIndex>999</zIndex>
-	  </image>
+<image name="cliente" extra="true">
+<pos>0.91 0.01</pos>
+<maxSize>0.08 0.08</maxSize>
+<color>ffffff</color>
+<path>./_inc/assets/cliente.png</path>
+<zIndex>999</zIndex>
+</image>
 
-     <helpsystem name="help">
-	 <iconColor>FFFFFF</iconColor>
-     <fontSize>0.02</fontSize>
-     <origin>0.5 0.5</origin>
-     <pos>0.5 0.985</pos>
-       <fontPath>./_inc/fonts/Digital-Serial-Bold-folder.ttf</fontPath>
-     </helpsystem>
-	 
-	 	        <image name="borde" extra="true">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>        
-         <path>./_inc/art/borde.png</path>
-         <zIndex>99999</zIndex>          
-      </image> 
-    
-    <text name="gamecarouselLogoText">
-		<color>FFFFFFFF</color>
-		<glowColor>00000050</glowColor>
-		<glowSize>3</glowSize>
-		<glowOffset>3</glowOffset>
-		<lineSpacing>1.0</lineSpacing>
-        <fontPath>./_inc/fonts/rg.ttf</fontPath>
-        <fontSize>0.030</fontSize>
-    </text>	
+<image name="header" extra="true">
+<pos>0.91 0.375</pos>
+<size>0.065 0.18</size>		
+<path>./_inc/assets/cliente.png</path>
+<zIndex>400</zIndex>
+<storyboard>
+<animation property="offsetY" from="0.28" to="0.375" begin="0" duration="1500" mode="linear"/><animation property="opacity" from="0" to="1" duration="1500" mode="easeIn"/>
+<animation property="scale" from="1" to="1.05" begin="1500" autoreverse="true" duration="1500" repeat="forever" mode="easeOut"/>
+</storyboard>		 
+</image>				  
 
-	<image name="system-background" extra="true">
-    <origin>0 0</origin>
-    <pos>0 0</pos>
-    <size>1 1</size>
-	<path>./_inc/art/gamecarousel.png</path>
-    <path>./${system.theme}/_inc/gamecarousel.png</path>
-    <zIndex>3</zIndex> 
-    </image> 
-	
-     <video name="md_video">
-		<color>ffffff</color>
-		<size>0.6 0.8</size>
-		<origin>0.5 0.5</origin>
-		<pos>0.65 0.485</pos>
-		<delay>0.4</delay>
-		<effect>none</effect>		 
-        <showSnapshotNoVideo>true</showSnapshotNoVideo>
-        <showSnapshotDelay>true</showSnapshotDelay>
-		<zIndex>1</zIndex>
-     </video> 
-	
-	
-		<text name="logoText">
-		<pos>0.691 0.444</pos>
-	    <fontSize>0.11</fontSize>
-		<fontPath>./_inc/fonts/1.ttf</fontPath>
-	    <size>0.57 0.1</size>
-		<alignment>center</alignment>
-        <color>FFFFFFB3</color>
-        <forceUppercase>1</forceUppercase>
-	    <rotation>-90</rotation>   
-	    <zIndex>999</zIndex>
-    </text>
-	
-</view>  
-   
-   </theme>
+<helpsystem name="help">
+<iconColor>FFFFFF</iconColor>
+<fontSize>0.02</fontSize>
+<origin>0.5 0.5</origin>
+<pos>0.5 0.985</pos>
+<fontPath>./_inc/fonts/Digital-Serial-Bold-folder.ttf</fontPath>
+</helpsystem>
+
+<image name="borde" extra="true">
+<origin>0 0</origin>
+<pos>0 0</pos>
+<size>1 1</size>        
+<path>./_inc/art/borde.png</path>
+<zIndex>99999</zIndex>          
+</image>
+
+<video name="md_video">
+<color>ffffff</color>
+<size>0.46 0.55</size>
+<origin>0.5 0.5</origin>
+<pos>0.466 0.355</pos>
+<delay>0.4</delay>
+<effect>none</effect>		 
+<showSnapshotNoVideo>true</showSnapshotNoVideo>
+<showSnapshotDelay>true</showSnapshotDelay>
+<zIndex>1</zIndex>	
+</video>
+	  		
+<image name="system-background" extra="true">
+<origin>0 0</origin>
+<pos>0 0</pos>
+<size>1 1</size>
+<path>./_inc/art/gamecarousel.png</path>
+<path>./${system.theme}/_inc/gamecarousel.png</path>
+<zIndex>3</zIndex> 
+</image>
+
+<image name="logo">
+<origin>0.0 0.0</origin> 		 
+<pos>0.7 0.008</pos>
+<maxSize>0.89 0.89</maxSize>
+<zIndex>47</zIndex>
+</image>	  
+	        
+<text name="md_lbl_rating,md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount,md_lbl_players,md_developer, md_publisher, md_genre, md_playcount, md_lastplayed,md_description,md_players,md_releasedate">
+<color>1a92d6</color>
+<fontPath>./_inc/fonts/moonhouse.ttf</fontPath>
+<fontSize>0.02</fontSize>
+</text>
+      
+<text name="md_lbl_rating">
+<pos>1.3 0.66</pos>
+<size>0.2 0.035</size>
+<color>ffffff</color>
+<zIndex>5</zIndex>                 
+</text>
+<rating name="md_rating">  
+
+<zIndex>5</zIndex>       
+<pos>0.57 0.710</pos>
+<size>0.035 0.035</size>
+<filledPath>./_inc/art/star_filled.png</filledPath>
+<unfilledPath>./_inc/art/star_empty.png</unfilledPath>
+<zIndex>100</zIndex>         
+</rating>
+
+<text name="md_lbl_players">
+<pos>0.26 0.718</pos>
+<size>0.1 0.02</size>
+<zIndex>43</zIndex>         
+</text>
+
+<text name="md_players">
+<pos>0.35 0.718</pos>
+<size>0.0375 0.02</size>
+<zIndex>43</zIndex>
+<color>ffffff</color>                  
+</text>
+
+<text name="md_lbl_releasedate">
+<pos>0.40 0.718</pos>
+<size>0.12 0.02</size>
+<zIndex>43</zIndex>         
+</text>
+
+<datetime name="md_releasedate">
+<pos>0.47 0.718</pos>
+<size>0.12 0.02</size>
+<zIndex>43</zIndex>
+<color>ffffff</color>                  
+</datetime>
+
+<text name="md_lbl_genre">
+<pos>0.26 0.758</pos>
+<size>0.1 0.02</size>
+<zIndex>5</zIndex>                   
+</text>
+
+<text name="md_genre">
+<pos>0.35 0.758</pos>
+<size>0.18 0.02</size>
+<color>ffffff</color>         
+<zIndex>5</zIndex>         
+</text>
+         
+<text name="md_lbl_playcount">
+<pos>1.7 0.685</pos>
+<size>0.2 0.035</size>
+<color>ffffff</color>
+<zIndex>5</zIndex>                   
+</text>
+
+<text name="md_playcount">
+<pos>1.8 0.685</pos>
+<size>0.0375 0.035</size>
+<color>F3E804</color>         
+<zIndex>5</zIndex>         
+</text>
+
+<text name="md_lbl_publisher">
+<pos>1.3 0.51</pos>
+<size>0.1 0.035</size>
+<color>ffffff</color>
+<zIndex>5</zIndex>                   
+</text>
+
+<text name="md_publisher">
+<pos>1.39 0.51</pos>
+<size>0.12 0.035</size>
+<color>F3E804</color>         
+<zIndex>5</zIndex>         
+</text>
+
+<text name="md_lbl_developer">
+<pos>1.3 0.56</pos>
+<size>0.1 0.035</size>
+<color>ffffff</color>
+<zIndex>5</zIndex>                   
+</text>
+
+<text name="md_developer">
+<pos>1.39 0.56</pos>
+<size>0.12 0.035</size>
+<color>F3E804</color>         
+<zIndex>5</zIndex>         
+</text>
+
+<text name="md_lbl_lastplayed">
+<pos>0.26 0.738</pos>
+<size>0.12 0.02</size>
+<zIndex>43</zIndex>         
+</text>
+
+<datetime name="md_lastplayed">
+<pos>0.35 0.738</pos>
+<size>0.12 0.02</size>
+<zIndex>43</zIndex>
+<color>ffffff</color>                  
+</datetime>
+                            
+<text name="md_description">
+<fontSize>0.02</fontSize>      
+<pos>0.26 0.79</pos>
+<size>0.32 0.11</size>
+<color>ffffff</color>
+<alignment>left</alignment>   
+<zIndex>43</zIndex>         
+</text>
+ 
+<text name="logoText">
+<pos>0.691 0.444</pos>
+<fontSize>0.11</fontSize>
+<fontPath>./_inc/fonts/1.ttf</fontPath>
+<size>0.57 0.1</size>
+<alignment>center</alignment>
+<color>FFFFFFB3</color>
+<forceUppercase>1</forceUppercase>
+<rotation>-90</rotation>   
+<zIndex>999</zIndex>
+</text>
+	  
+</view> 
+</theme>
