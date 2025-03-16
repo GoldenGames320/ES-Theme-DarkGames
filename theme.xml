@@ -20,7 +20,11 @@ update:         March 2025
 
 <include subset="menu" name="menu dark">./menu-dark.xml</include>
 <include subset="logo" name="Logo Default">./m-logo.xml</include>
+
 <include subset="color" name="Color Default">./_inc/color/Default.xml</include>
+<include subset="color" name="Color Dark">./_inc/color/Dark.xml</include>
+<include subset="color" name="Color Dark Blue">./_inc/color/Dark Blue.xml</include>
+
 <include subset="help" name="Color Default">./_inc/helpsystem/Default.xml</include>
 	
 <include subset="iconset" name="icon Default">./iconsets/default.xml</include>
