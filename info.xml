@@ -1,0 +1,34 @@
+<!--
+creator:	@Goldengames320
+theme name:     ES-Theme-DarkGames
+update:         March 2025
+-->
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<!---------------------------info avatar------------------------------------- -->
+
+<view name="system">
+
+<image name="avatar" extra="static">
+<path>./main/avatars/${image.avatar}</path>
+<path ifSubset="system-avatar">./avatars/images/user.png</path>
+<pos>0.840 0.001</pos>
+<maxSize>0.054 0.054</maxSize>
+<zIndex>99</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+   
+<text name="username" extra="static">
+<text>${theme.nick}</text>
+<text ifSubset="system-username:custom">${custom.nick}</text>
+<pos>0.875 0.012</pos>
+<color>FFFFFF</color>
+<fontSize>0.024</fontSize>
+<zIndex>99</zIndex>
+</text>
+
+</view>
+
+</theme>

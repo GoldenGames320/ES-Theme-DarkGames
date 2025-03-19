@@ -8,15 +8,15 @@ update:         March 2025
 <theme defaultView="gamecarousel">
 <formatVersion>7</formatVersion>
 
-<!---------------------------theme------------------------------------- -->
-
 <feature supported="carousel">
 <view name="system">
 <sound name="directory">
 <path>./_inc/music/</path>
-</sound>	  
-</view>
+</sound>
+</view>	  
 </feature>
+
+<!---------------------------theme------------------------------------- -->
 
 <include subset="menu" name="menu dark">./menu-dark.xml</include>
 <include subset="logo" name="Logo Default">./m-logo.xml</include>
@@ -34,7 +34,7 @@ update:         March 2025
 <include subset="iconset" name="icon ARCADE">./iconsets/arcade.xml</include>
 <include subset="iconset" name="icon Xbox One">./iconsets/xboxone.xml</include>
 <include subset="iconset" name="icon Switch">./iconsets/switch.xml</include>
-<include subset="iconset" name="icon PSX ALT">./iconsets/psx1.xml</include>
+<include subset="iconset" name="icon PSX COLOR">./iconsets/psx color.xml</include>
 <include subset="iconset" name="icon SNES ALT">./iconsets/snesalt.xml</include>
 	
 <include subset="sound" name="sound Default">./_inc/sound/1up.xml</include>
@@ -62,7 +62,7 @@ update:         March 2025
 <include subset="sound" name="sound iata">./_inc/sound/giata.xml</include>
 <include subset="sound" name="sound scroll">./_inc/sound/scroll.xml</include>
 <include subset="sound" name="sound line">./_inc/sound/line.xml</include>
-   	
+  	
 <include subset="Shader" name="Shader off">./shader/off.xml</include>
 <include subset="Shader" name="Shader 01">./shader/scanlines.xml</include>
 <include subset="Shader" name="Shader 02">./shader/crt.xml</include>
@@ -73,29 +73,40 @@ update:         March 2025
 	
 <include subset="Animation" name="Animation on">./Animation-on.xml</include>
 <include subset="Animation" name="Animation off">./Animation-off.xml</include>
+
+<!---------------------------avatar------------------------------------- -->
+
+<include>./info.xml</include>
+<include>./infos/${system.theme}.xml</include>
+<include>./username.xml</include>
+
+<subset name="avatar" displayName="${theme.Avatar}" extra="true, static">
+<include name="custom" displayName="${custom}">./main/avatars/custom.xml</include>
+<include name="batocera" displayName="Batocera">./main/avatars/batocera.xml</include>
+<include name="retrobat" displayName="Retrobat">./main/avatars/retrobat.xml</include>
+<include name="emuelec" displayName="Emuelec">./main/avatars/emuelec.xml</include>
+<include name="emulationstation" displayName="Emulationstation">./main/avatars/emulationstation.xml</include>
+<include name="recalbox" displayName="Recalbox">./main/avatars/recalbox.xml</include>
+</subset>
 	
 <!---------------------------screen------------------------------------- -->
 
-<view name="screen">
+<view name="screen" extra="static">
 
-<text name="clock">
-<glowColor>101010</glowColor>
+<text name="clock" extra="static">
+<color>FFFFFF</color>
 <fontSize>0.024</fontSize>
-<color>ffffff</color>
-<fontPath>./_inc/fonts/Digib.ttf</fontPath>
-<pos>2 2</pos>
-<size>0.05 0.058</size>
-<verticalAlignment>right</verticalAlignment>
+<pos>0.948 0.012</pos>
 </text>
-			
+		
 <controllerActivity name="controllerActivity">
-<pos>0.01 0.010</pos>
-<size>0.085 0.025</size>
+<pos>0.003 0.012</pos>
+<size>0.050 0.029</size>
 <itemSpacing>0.003</itemSpacing>
-<imagePath>./_inc/gamepad.svg</imagePath>
-<color>FFFFFF1A</color>
-<activityColor>ff00001A</activityColor>
-<hotkeyColor>ffffff1A</hotkeyColor>
+<imagePath>./_inc/icons/Controllers.png</imagePath>
+<color>FFFFFF90</color>
+<activityColor>A0A0FFC0</activityColor>
+<hotkeyColor>FFA0A0C0</hotkeyColor>
 </controllerActivity>
 
 <batteryIndicator name="batteryIndicator">
@@ -107,12 +118,15 @@ update:         March 2025
 <at50>./_inc/battery/50.svg</at50>
 <at25>./_inc/battery/25.svg</at25>
 <empty>./_inc/battery/empty.svg</empty>
-<color>FFFFFFA0</color>
+<color>FFFFFF</color>
 </batteryIndicator>
-<batteryIndicator name="batteryIndicator" tinyScreen="true">
-<pos>0.915 0.013</pos>
-<size>0.07 0.07</size>
+
+<batteryIndicator name="batteryIndicator">
+<pos>0.945 0.014</pos>
+<size>0.028 0.028</size>
+<color>FFFFFF</color>
 </batteryIndicator>
+
 </view>
 
 <!---------------------------menu------------------------------------- -->
@@ -148,6 +162,7 @@ update:         March 2025
 	
 <menuIcons name="menuicons">
 <iconKodi>./_inc/icons/Kodi.png</iconKodi>
+<iconManual>./_inc/icons/Manual.png</iconManual>
 <iconSystem>./_inc/icons/System.png</iconSystem>
 <iconUpdates>./_inc/icons/Updates.png</iconUpdates>
 <iconGames>./_inc/icons/Games.png</iconGames>
@@ -163,6 +178,7 @@ update:         March 2025
 <iconFastShutdown>./_inc/icons/Fastshutdown.png</iconFastShutdown>
 <iconRetroachievements>./_inc/icons/Contest.png</iconRetroachievements>
 <iconEmuelec>./_inc/icons/Emuelec.png</iconEmuelec>
+<iconPlanemode>./_inc/icons/Planemode.png</iconPlanemode>
 </menuIcons>
 	
 <menuTextEdit name="menutextedit">

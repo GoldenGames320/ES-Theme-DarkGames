@@ -42,7 +42,7 @@ update:         March 2025
 <image name="md_thumbnail"> 
 <origin>0 0</origin>
 <pos>0.0255 0.0639</pos>
-<default>./_inc/art/001.png</default>
+<default>./_inc/art/no_image.png</default>
 <maxSize>0.35 0.6689</maxSize>
 <path>./_art/empty.png</path>
 <linearSmooth>true</linearSmooth>

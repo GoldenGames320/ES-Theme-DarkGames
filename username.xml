@@ -1,0 +1,21 @@
+<!--
+creator:	@Goldengames320
+theme name:     ES-Theme-DarkGames
+update:         March 2025
+-->
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<!---------------------------username------------------------------------- -->
+ 
+<view name="system, splash"> 
+<text name="username" extra="static">
+<!-- just rename USERNAME to your username-->
+<!-- rinomina semplicemente USERNAME con il tuo username-->
+<text>username</text>
+</text>
+ 
+</view>
+ 
+</theme>
