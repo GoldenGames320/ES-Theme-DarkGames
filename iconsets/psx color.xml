@@ -1,0 +1,22 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	
+	<view name="menu, system, basic, detailed, video, grid, gamecarousel">
+		<helpsystem name="help">
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./psx color/updown.png</iconUpDown>
+			<iconLeftRight>./psx color/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./psx color/all.png</iconUpDownLeftRight>
+			<iconA>./psx color/a.png</iconA>
+			<iconB>./psx color/b.png</iconB>
+			<iconX>./psx color/x.png</iconX>
+			<iconY>./psx color/y.png</iconY>
+			<iconL>./psx color.png</iconL>
+			<iconR>./psx color/r.png</iconR>
+			<iconStart>./psx color/start.png</iconStart>
+			<iconSelect>./psx color/select.png</iconSelect>
+                        <iconF1>./psx color/f1.png</iconF1>
+		</helpsystem>		
+	</view>
+	
+</theme>

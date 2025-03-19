@@ -15,6 +15,7 @@
 			<iconR>./xboxone/r.png</iconR>
 			<iconStart>./xboxone/start.png</iconStart>
 			<iconSelect>./xboxone/select.png</iconSelect>
+                        <iconF1>./xboxone/f1.png</iconF1>
 		</helpsystem>		
 	</view>
 	

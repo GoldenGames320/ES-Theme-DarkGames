@@ -15,6 +15,7 @@
 			<iconR>./snesalt/r.png</iconR>
 			<iconStart>./snesalt/start.png</iconStart>
 			<iconSelect>./snesalt/select.png</iconSelect>
+                        <iconF1>./snesalt/f1.png</iconF1>
 		</helpsystem>		
 	</view>
 	

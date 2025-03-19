@@ -15,6 +15,7 @@
 			<iconR>./switch/r.png</iconR>
 			<iconStart>./switch/start.png</iconStart>
 			<iconSelect>./switch/select.png</iconSelect>
+                        <iconF1>./switch/f1.png</iconF1>
 		</helpsystem>		
 	</view>
 	
