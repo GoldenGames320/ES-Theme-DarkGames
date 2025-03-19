@@ -1,0 +1,15 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="system">
+
+<image name="user" extra="static">
+<roundCorners>0.5</roundCorners>
+<path>./user.jpeg</path>
+<path>./user.jpg</path>
+<path>./user.png</path>
+</image>
+      
+</view>
+
+</theme>
