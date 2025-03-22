@@ -1,0 +1,201 @@
+<!--
+creator:	@Goldengames320
+theme name:     ES-Theme-DarkGames
+update:         March 2025
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme defaultView="gamecarousel">
+<formatVersion>7</formatVersion>
+
+<feature supported="carousel">
+<view name="system">
+<sound name="directory">
+<path>./_inc/music/</path>
+</sound>
+</view>	  
+</feature>
+
+<!---------------------------theme------------------------------------- -->
+
+<include subset="menu" name="menu dark">./menu-dark.xml</include>
+<include subset="logo" name="Logo Default">./m-logo.xml</include>
+
+<include subset="color" name="Color Default">./_inc/color/Default.xml</include>
+<include subset="color" name="Color Dark">./_inc/color/Dark.xml</include>
+<include subset="color" name="Color Dark Blue">./_inc/color/Dark Blue.xml</include>
+
+<include subset="help" name="Color Default">./_inc/helpsystem/Default.xml</include>
+	
+<include subset="iconset" name="icon Default">./iconsets/default.xml</include>
+<include subset="iconset" name="icon PSX">./iconsets/psx.xml</include>
+<include subset="iconset" name="icon SNES">./iconsets/snes.xml</include>
+<include subset="iconset" name="icon XBOX">./iconsets/xbox.xml</include>
+<include subset="iconset" name="icon ARCADE">./iconsets/arcade.xml</include>
+<include subset="iconset" name="icon Xbox One">./iconsets/xboxone.xml</include>
+<include subset="iconset" name="icon Switch">./iconsets/switch.xml</include>
+<include subset="iconset" name="icon PSX COLOR">./iconsets/psx color.xml</include>
+<include subset="iconset" name="icon SNES ALT">./iconsets/snesalt.xml</include>
+	
+<include subset="sound" name="sound Default">./_inc/sound/1up.xml</include>
+<include subset="sound" name="sound off">./_inc/sound/off.xml</include>
+<include subset="sound" name="sound comic">./_inc/sound/comic.xml</include>
+<include subset="sound" name="sound hyperspin">./_inc/sound/hyperspin.xml</include>
+<include subset="sound" name="sound roleta">./_inc/sound/roleta.xml</include>
+<include subset="sound" name="sound classic">./_inc/sound/classic.xml</include>
+<include subset="sound" name="sound Button">./_inc/sound/Button.xml</include>
+<include subset="sound" name="sound cursor">./_inc/sound/cursor.xml</include>
+<include subset="sound" name="sound Golf">./_inc/sound/Golf.xml</include>
+<include subset="sound" name="sound Keiba">./_inc/sound/Keiba.xml</include>
+<include subset="sound" name="sound mario">./_inc/sound/mario.xml</include>
+<include subset="sound" name="sound Message">./_inc/sound/Message.xml</include>
+<include subset="sound" name="sound Monopoly">./_inc/sound/Monopoly.xml</include>
+<include subset="sound" name="sound Phone">./_inc/sound/Phone.xml</include>
+<include subset="sound" name="sound Save">./_inc/sound/Save.xml</include>
+<include subset="sound" name="sound slide">./_inc/sound/slide.xml</include>
+<include subset="sound" name="sound Spin">./_inc/sound/Spin.xml</include>
+<include subset="sound" name="sound Yoshi">./_inc/sound/Yoshi.xml</include>
+<include subset="sound" name="sound moneda">./_inc/sound/Yoshi2.xml</include>
+<include subset="sound" name="sound ring">./_inc/sound/ring.xml</include>
+<include subset="sound" name="sound zumb">./_inc/sound/zumb.xml</include>
+<include subset="sound" name="sound tone">./_inc/sound/tone.xml</include>
+<include subset="sound" name="sound iata">./_inc/sound/giata.xml</include>
+<include subset="sound" name="sound scroll">./_inc/sound/scroll.xml</include>
+<include subset="sound" name="sound line">./_inc/sound/line.xml</include>
+  	
+<include subset="Shader" name="Shader off">./shader/off.xml</include>
+<include subset="Shader" name="Shader 01">./shader/scanlines.xml</include>
+<include subset="Shader" name="Shader 02">./shader/crt.xml</include>
+<include subset="Shader" name="Shader 03">./shader/scanlines3.xml</include>
+<include subset="Shader" name="Shader 04">./shader/scanlines4.xml</include>
+<include subset="Shader" name="Shader 05">./shader/scanlines5.xml</include>
+<include subset="Shader" name="Shader 06">./shader/scanlines10.xml</include>
+	
+<include subset="Animation" name="Animation on">./Animation-on.xml</include>
+<include subset="Animation" name="Animation off">./Animation-off.xml</include>
+
+<!---------------------------avatar------------------------------------- -->
+
+<include>./info.xml</include>
+<include>./infos/${system.theme}.xml</include>
+<include>./username.xml</include>
+
+<subset name="avatar" displayName="${theme.Avatar}" extra="true, static">
+<include name="custom" displayName="${custom}">./avatars/custom.xml</include>
+<include name="batocera" displayName="Batocera">./avatars/batocera.xml</include>
+<include name="retrobat" displayName="Retrobat">./avatars/retrobat.xml</include>
+<include name="emuelec" displayName="Emuelec">./avatars/emuelec.xml</include>
+<include name="emulationstation" displayName="Emulationstation">./avatars/emulationstation.xml</include>
+<include name="recalbox" displayName="Recalbox">./avatars/recalbox.xml</include>
+</subset>
+	
+<!---------------------------screen------------------------------------- -->
+
+<view name="screen" extra="static">
+
+<text name="clock" extra="static">
+<color>FFFFFF</color>
+<fontSize>0.024</fontSize>
+<pos>0.948 0.012</pos>
+</text>
+		
+<controllerActivity name="controllerActivity">
+<pos>0.003 0.012</pos>
+<size>0.085 0.025</size>
+<itemSpacing>0.003</itemSpacing>
+<imagePath>./controllerActivity/gamepad.svg</imagePath>
+<gunPath>./controllerActivity/gun.svg</gunPath>
+<color>FFFFFF90</color>
+<activityColor>A0A0FFC0</activityColor>
+<hotkeyColor>FFA0A0C0</hotkeyColor>
+</controllerActivity>
+
+<batteryIndicator name="batteryIndicator">
+<pos>0.955 0.0125</pos>
+<size>0.033 0.033</size>
+<incharge>./_inc/battery/incharge.svg</incharge>
+<full>./_inc/battery/full.svg</full>
+<at75>./_inc/battery/75.svg</at75>
+<at50>./_inc/battery/50.svg</at50>
+<at25>./_inc/battery/25.svg</at25>
+<empty>./_inc/battery/empty.svg</empty>
+<color>FFFFFF</color>
+</batteryIndicator>
+
+<batteryIndicator name="batteryIndicator">
+<pos>0.945 0.014</pos>
+<size>0.028 0.028</size>
+<color>FFFFFF</color>
+</batteryIndicator>
+
+</view>
+
+<!---------------------------menu------------------------------------- -->
+
+<view name="menu">
+   
+<menuText name="menutitle">
+<fontPath>./_inc/fonts/Digital-Serial-Bold.ttf</fontPath>
+<fontSize>0.04</fontSize>
+</menuText>
+	  
+<menuText name="menufooter">
+<fontPath>./_inc/fonts/Digital-Serial-Bold.ttf</fontPath>
+<fontSize>0.023</fontSize>
+</menuText>
+	  
+<menuText name="menutext">
+<fontPath>./_inc/fonts/Digital-Serial-Bold.ttf</fontPath>
+<fontSize>0.029</fontSize>
+<selectorGradientType>horizontal</selectorGradientType>
+</menuText>
+	
+<menuTextSmall name="menutextsmall">
+<fontPath>./_inc/Digital-Serial-Bold.ttf</fontPath>
+<fontSize>0.022</fontSize>
+</menuTextSmall>
+	
+<menuBackground name="menubg">
+<path>./_inc/art/back.png</path>
+<path>./_inc/art/frame.png</path>
+<cornerSize>32 32</cornerSize>
+</menuBackground>
+	
+<menuIcons name="menuicons">
+<iconKodi>./_inc/icons/Kodi.png</iconKodi>
+<iconManual>./_inc/icons/Manual.png</iconManual>
+<iconSystem>./_inc/icons/System.png</iconSystem>
+<iconUpdates>./_inc/icons/Updates.png</iconUpdates>
+<iconGames>./_inc/icons/Games.png</iconGames>
+<iconControllers>./_inc/icons/Controllers.png</iconControllers>
+<iconUI>./_inc/icons/UI.png</iconUI>
+<iconSound>./_inc/icons/Sound.png</iconSound>
+<iconNetwork>./_inc/icons/Network.png</iconNetwork>
+<iconScraper>./_inc/icons/Scraper.png</iconScraper>
+<iconAdvanced>./_inc/icons/Advanced.png</iconAdvanced>
+<iconQuit>./_inc/icons/Quit.png</iconQuit>
+<iconRestart>./_inc/icons/Restart.png</iconRestart>
+<iconShutdown>./_inc/icons/Shutdown.png</iconShutdown>
+<iconFastShutdown>./_inc/icons/Fastshutdown.png</iconFastShutdown>
+<iconRetroachievements>./_inc/icons/Contest.png</iconRetroachievements>
+<iconEmuelec>./_inc/icons/Emuelec.png</iconEmuelec>
+<iconPlanemode>./_inc/icons/Planemode.png</iconPlanemode>
+</menuIcons>
+	
+<menuTextEdit name="menutextedit">
+<inactive>./_inc/art/textinput_ninepatch.png</inactive>
+<active>./_inc/art/textinput_ninepatch_active.png</active>
+</menuTextEdit>
+	
+</view> 
+
+<!---------------------------list of games----------------------- -->
+
+<include name="basic">./basic.xml</include>
+<include name="detailed">./detailed.xml</include>
+<include name="video">./video.xml</include>
+<include name="grid">./grid.xml</include>
+<include name="gamecarousel">./gamecarousel.xml</include>
+<include name="gamedark">./gamedark.xml</include>
+
+</theme>
