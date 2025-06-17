@@ -87,6 +87,7 @@ update:         March 2025
 <include name="emuelec" displayName="Emuelec">./avatars/emuelec.xml</include>
 <include name="emulationstation" displayName="Emulationstation">./avatars/emulationstation.xml</include>
 <include name="recalbox" displayName="Recalbox">./avatars/recalbox.xml</include>
+<include name="goldengames" displayName="GoldenGames">./avatars/goldengames.xml</include>
 </subset>
 	
 <!---------------------------screen------------------------------------- -->
