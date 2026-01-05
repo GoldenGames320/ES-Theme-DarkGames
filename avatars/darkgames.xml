@@ -1,0 +1,11 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="system">
+<image name="avatar" extra="static">
+<path>./images/darkgames.png</path>
+</image>
+     
+</view>
+
+</theme>
